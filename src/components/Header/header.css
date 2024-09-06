@@ -1,0 +1,72 @@
+header{
+ /* min-height:100dvh;  */
+ /* width: 100%;  */
+ 
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    /* background-color: blue; */
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+nav{
+    height: 10vh;
+    top: 0;
+    position: sticky;
+    background-color: rgb(20, 20,20);
+    /* background: transparent; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: white;
+    display: flex;
+    padding: 5px 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: blue; */
+
+}
+
+nav ul{
+     /* border: 1px solid yellow; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left{
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+.nav-right{
+    justify-content: flex-end;
+}
+
+nav ul li{
+    padding: 5px 7px;
+    margin:auto 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover, nav ul li a:hover{
+    color:red;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+
