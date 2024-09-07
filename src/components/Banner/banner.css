@@ -13,11 +13,19 @@
 .featured{
     /* background-color: rgba(0, 0, 0, .3); */
     /* border: 2px solid yellow; */
-    
-   margin-top: 100px;
-    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 400ms;
+    flex-wrap: wrap;
+   margin-top: 150px;
     padding: 0 30px;
 }
+
+.featured_left,.trailer_container{
+    max-width: 600px;
+}
+
 
 .featured-title{
     color: white;
@@ -63,5 +71,5 @@ cursor: pointer;
     /* border: 2px solid yellow; */
     height: 300px;
     margin-top: 20px;
-    background-image: linear-gradient(180deg, transparent, rgb(37, 37, 37,.51), #111);
+    background-image: linear-gradient(180deg, transparent, rgb(37, 37, 37,.61), #111);
 }

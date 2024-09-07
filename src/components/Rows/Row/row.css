@@ -5,13 +5,20 @@
 
 .list_title {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 5px 0;
 }
 
 .movie_list_holder {
   display: flex;
-  overflow-x: hidden;
+
+  /* the below 3 line of codes will list the moveies fully by allowing wrap; no nned to worry about scrolling horizontally */
+  /*NOTE: add a slider for the listed movies  */
+  /* flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; */
+
+  overflow-x:hidden;
   overflow-y: hidden;
   /* margin-bottom: 15px; */
 }
@@ -20,9 +27,17 @@
   height: 100px;
   margin-right: 10px;
   padding: 5px;
-  transition: transform 450ms ease-in-out;
+  transition: transform 300ms linear;
+
 }
 
+.row_poster:hover{
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+
+  padding:0
+
+}
 .row_poster:hover {
   transform: scale(1.08);
   cursor: pointer;
